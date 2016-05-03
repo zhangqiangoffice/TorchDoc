@@ -1,0 +1,27 @@
+{
+  "name": "weadowlark",
+  "version": "1.0.0",
+  "description": "草地鸟旅行社",
+  "main": "meadowlark.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express3-handlebars": "^0.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhangqiangoffice/meadowlark.git"
+  },
+  "keywords": [
+    "meadowlark"
+  ],
+  "author": "Zhang Qiang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhangqiangoffice/meadowlark/issues"
+  },
+  "homepage": "https://github.com/zhangqiangoffice/meadowlark#readme"
+}
