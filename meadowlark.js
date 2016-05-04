@@ -8,7 +8,7 @@ var fortune = require('./lib/fortune.js');
 app.engine('handlebars', j=handlebars.engine);
 app.set('view engine', 'handlebars');
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3001);
 
 app.use(express.static(__dirname + '/public'));
 
