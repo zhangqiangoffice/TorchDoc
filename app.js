@@ -1,4 +1,4 @@
-var express = require('express');
+﻿var express = require('express');
 var app = express();
 
 app.set('port', 3001);
@@ -90,6 +90,18 @@ app.post('/api004', function(req, res) {
 		]		
 	};
 	res.json(obj004);
+});
+
+//火炬手接口 API005
+app.post('/api005', function(req, res) {
+	var obj005 = {result: 1, message: '收藏成功'};
+	res.json(obj005);
+});
+
+//火炬手接口 API006
+app.post('/api006', function(req, res) {
+	var obj006 = {result: 1, message: '学习通过'};
+	res.json(obj006);
 });
 
 
