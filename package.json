@@ -1,11 +1,10 @@
 {
-  "name": "weadowlark",
+  "name": "TorchDoc",
   "version": "1.0.0",
-  "description": "草地鸟旅行社",
-  "main": "meadowlark.js",
+  "description": "火炬手前端文档",
+  "main": "app.js",
   "dependencies": {
-    "express": "^4.13.4",
-    "express3-handlebars": "^0.5.2"
+    "express": "^4.13.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
@@ -16,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhangqiangoffice/meadowlark.git"
+    "url": "git+https://github.com/zhangqiangoffice/TorchDoc.git"
   },
   "keywords": [
-    "meadowlark"
+    "TorchDoc"
   ],
   "author": "Zhang Qiang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zhangqiangoffice/meadowlark/issues"
+    "url": "https://github.com/zhangqiangoffice/TorchDoc/issues"
   },
-  "homepage": "https://github.com/zhangqiangoffice/meadowlark#readme"
+  "homepage": "https://github.com/zhangqiangoffice/TorchDoc#readme"
 }
