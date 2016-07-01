@@ -11,13 +11,13 @@ app.get('/', function(req, res) {
 
 
 //火炬手接口 API001
-app.post('/api001', function(req, res) {
+app.post('/app/login', function(req, res) {
 	var obj001 = {result: 1, message: '登录成功', userid: 1};
 	res.json(obj001);
 });
 
 //火炬手接口 API002
-app.post('/api002', function(req, res) {
+app.post('/app/register', function(req, res) {
 	var obj002 = {result: 1, message: '注册成功', userid: 2};
 	res.json(obj002);
 });
@@ -33,8 +33,7 @@ app.post('/api003', function(req, res) {
 				title: '习近平就佛罗里达州枪击事件向美国总统奥巴马致慰问电',
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				pic: 'img/create_pic1.png',
-				learned: 1,
-				liked: 1,
+				collected: 1,
 				tag_name: '政策',
 				tag_color: '#F39801'},
 			{
@@ -42,7 +41,6 @@ app.post('/api003', function(req, res) {
 				title: '习近平向美国总统奥巴马致慰问电',
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				pic: 'img/create_pic1.png',
-				learned: 0,
 				collected: 1,
 				tag_name: '军事',
 				tag_color: '#22AC35'},
@@ -51,7 +49,6 @@ app.post('/api003', function(req, res) {
 				title: '就佛罗里达州枪击事件习近平向美国总统奥巴马致慰问电',
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				pic: 'img/create_pic1.png',
-				learned: 1,
 				collected: 0,
 				tag_name: '政策',
 				tag_color: '#F39801'},
@@ -60,7 +57,6 @@ app.post('/api003', function(req, res) {
 				title: '美国总统奥巴马致慰问电',
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				pic: 'img/learn_pic.png',
-				learned: 1,
 				collected: 0,
 				tag_name: '政策',
 				tag_color: '#F39801'}
@@ -104,6 +100,119 @@ app.post('/api006', function(req, res) {
 	res.json(obj006);
 });
 
+//火炬手接口 API007
+app.post('/api007', function(req, res) {
+	var obj007 = {
+		result: 1, 
+		message: '成功', 
+		list: [
+			{
+				id: 1, 
+				title: '习近平就佛罗里达州枪击事件向美国总统奥巴马致慰问电',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				pic: 'img/create_pic1.png',
+				collected: 1,
+				tag_name: '政策',
+				tag_color: '#F39801',
+				likes_num: 10,
+				comments_num: 5,
+				liked: 1},
+			{
+				id: 2, 
+				title: '习近平向美国总统奥巴马致慰问电',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				pic: 'img/create_pic1.png',
+				collected: 1,
+				tag_name: '军事',
+				tag_color: '#22AC35',
+				likes_num: 8,
+				comments_num: 15,
+				liked: 0},
+			{
+				id: 3, 
+				title: '就佛罗里达州枪击事件习近平向美国总统奥巴马致慰问电',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				pic: 'img/create_pic1.png',
+				collected: 0,
+				tag_name: '政策',
+				tag_color: '#F39801',
+				likes_num: 100,
+				comments_num: 5,
+				liked: 1},
+			{
+				id: 4, 
+				title: '美国总统奥巴马致慰问电',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				pic: 'img/learn_pic.png',
+				collected: 0,
+				tag_name: '政策',
+				tag_color: '#F39801',
+				likes_num: 78750,
+				comments_num: 4545,
+				liked: 0}
+		]
+	};
+	res.json(obj007);
+});
+
+//火炬手接口 API008
+app.post('/api008', function(req, res) {
+	var obj008 = {
+		result: 1, 
+		message: '成功', 
+		date: '2016-06-30',
+		content: '冷战后,经济危机、跨国移民等地区性问题开始质疑“东盟方式”的合理性和有效性,要求修改不干涉内政原则,强化东盟机制建设,形成一套有效的跨国管理模式,更好地发挥其地区管理者的作用。那么,东盟会调整“东盟方式”以适应不断变化的国际和地区环境变化的需要吗? 本文试图从东盟有意识的加强自身组织建设过程中探寻“东盟方式”的困境。冷战后,东盟组织经历了一系列重大调整。在组织结构方面,完善决策机制满足政治经济发展需要,吸收印支三国和缅甸实现大东盟梦想。在组织目标方面,借鉴欧洲共同体发展经验,成立自由贸易区,加紧东盟共同体建设。然而,扩大后的东盟成员国对国家主权的依然高度敏感,国家利益优先于地区利益。东盟共同体建设并没有深化成员国之间的政治经济联系,推进东盟制度化建设,其目的是共同协商处理地区问题。因此,东盟组织的完善并没改变东盟松散联盟的性质,决定了“东盟方式”存在的必要。 然而,不容忽视的是：《东盟宪章》赋予了东盟法律人格,保障了东盟实体地位,确立了《东盟宪章》至高无上的地位以及普遍约束力。',
+		author: '萧景琰'		
+	};
+	res.json(obj008);
+});
+
+//火炬手接口 API009
+app.post('/api009', function(req, res) {
+	var obj009 = {result: 1, message: '点赞成功'};
+	res.json(obj009);
+});
+
+//火炬手接口 API010
+app.post('/api010', function(req, res) {
+	var obj010 = {result: 1, message: '评论成功',name: "梅长苏", portrait: 'img/portrait_meichangsu.png',  data:'2016-7-12', remark: '此生一诺，来世必践'};
+	res.json(obj010);
+});
+
+//火炬手接口 API011
+app.post('/api011', function(req, res) {
+	var obj011 = {
+		result: 1, 
+		message: '成功',
+		comments: [
+			{
+				name: '蒙挚',
+				date: '2016-07-01',
+				portrait: 'img/portrait_mengzhi.png',
+				remark: '小殊，你怎么来了？'
+			},
+			{
+				name: '霓凰',
+				date: '2016-07-01',
+				portrait: 'img/portrait_nihuang.png',
+				remark: '这里明明有一颗痣'
+			},
+			{
+				name: '谢玉',
+				date: '2016-07-01',
+				portrait: 'img/portrait_xieyu.png',
+				remark: '朝堂之中哪有什么正岐之分，胜者，自然为正'
+			},
+			{
+				name: '太奶奶',
+				date: '2016-07-01',
+				portrait: 'img/portrait_tainainai.png',
+				remark: '你们什么时候结婚？'
+			},
+		]		
+		};
+	res.json(obj011);
+});
 
 
 app.use(function(req, res) {
