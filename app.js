@@ -36,7 +36,7 @@ app.post('/api003', function(req, res) {
 				date: '2016-04-21',
 				pic: 'img/create_pic1.png',
 				tag_name: '政策',
-				tag_color: '#F39801',
+				tag_color: 'F39801',
 				likes_num: 110,
 				comments_num: 815,
 				collected: 0,
@@ -49,7 +49,7 @@ app.post('/api003', function(req, res) {
 				date: '2016-06-03',
 				pic: 'img/learn_pic.png',
 				tag_name: '军事',
-				tag_color: '#22AC35',
+				tag_color: '22AC35',
 				likes_num: 120,
 				comments_num: 831,
 				collected: 0,
@@ -62,7 +62,7 @@ app.post('/api003', function(req, res) {
 				date: '2015-12-29',
 				pic: 'img/create_pic1.png',
 				tag_name: '政策',
-				tag_color: '#F39801',
+				tag_color: 'F39801',
 				likes_num: 10,
 				comments_num: 5,
 				collected: 0,
@@ -75,7 +75,7 @@ app.post('/api003', function(req, res) {
 				date: '2016-06-01',
 				pic: 'img/learn_pic.png',
 				tag_name: '政策',
-				tag_color: '#F39801',
+				tag_color: 'F39801',
 				likes_num: 10,
 				comments_num: 5,
 				collected: 1,
@@ -85,10 +85,10 @@ app.post('/api003', function(req, res) {
 				title: '建党95周年庆祝大会举行 习近平发表讲话',
 				description: '中国网7月1日讯 庆祝中国共产党成立95周年大会于7月1日上午在人民大会堂举行。中共中央总书记、国家主席、中央军委主席习近平出席大会并发表重要讲话。',
 				author: '言豫津',
-				date: '2016-06-01',
+				date: '2016-07-01',
 				pic: 'img/learn_pic.png',
 				tag_name: '政策',
-				tag_color: '#F39801',
+				tag_color: 'F39801',
 				likes_num: 104,
 				comments_num: 334,
 				collected: 1,
@@ -98,10 +98,10 @@ app.post('/api003', function(req, res) {
 				title: '美国总统奥巴马致慰问电',
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '楼之敬',
-				date: '2016-06-01',
+				date: '2016-11-01',
 				pic: 'img/learn_pic.png',
 				tag_name: '政策',
-				tag_color: '#F39801',
+				tag_color: 'F39801',
 				likes_num: 80,
 				comments_num: 38,
 				collected: 1,
@@ -111,10 +111,10 @@ app.post('/api003', function(req, res) {
 				title: '美国总统奥巴马致慰问电',
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '卓鼎风',
-				date: '2016-06-01',
+				date: '2016-06-21',
 				pic: 'img/learn_pic.png',
 				tag_name: '政策',
-				tag_color: '#F39801',
+				tag_color: 'F39801',
 				likes_num: 67,
 				comments_num: 208,
 				collected: 0,
@@ -213,6 +213,20 @@ app.post('/api010', function(req, res) {
 		]		
 		};
 	res.json(obj010);
+});
+
+//火炬手接口 API011
+app.post('/api011', function(req, res) {
+	var obj011 = {
+		result: 1, 
+		message: '成功',
+		name: '梅长苏',
+		portrait: 'img/portrait_meichangsu.png',
+		collected_num: '3',
+		learned_num: '4',
+		create_num: '5'
+	};
+	res.json(obj011);
 });
 
 
