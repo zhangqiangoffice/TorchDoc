@@ -229,6 +229,80 @@ app.post('/api011', function(req, res) {
 	res.json(obj011);
 });
 
+//火炬手接口 API012
+app.post('/api012', function(req, res) {
+	var obj012 = {
+		result: 1, 
+		message: '成功'
+	};
+	res.json(obj012);
+});
+
+//火炬手接口 API013
+app.post('/api013', function(req, res) {
+	var obj013 = {
+		result: 1, 
+		message: '成功'
+	};
+	res.json(obj013);
+});
+
+//火炬手接口 API014
+app.post('/api014', function(req, res) {
+	var obj014 = {
+		result: 1, 
+		message: '成功',
+		tags: [
+			{id: 1, name: "政治"},
+			{id: 2, name: "军事"},
+			{id: 3, name: "国际"},
+			{id: 4, name: "时事"}
+		]
+	};
+	res.json(obj014);
+});
+
+//火炬手接口 API015
+app.post('/api015', function(req, res) {
+	var obj015 = {
+		result: 1, 
+		message: '成功',
+		authorization: 1
+	};
+	res.json(obj015);
+});
+
+//火炬手接口 API016
+app.post('/api016', function(req, res) {
+	var obj016 = {
+		result: 1, 
+		message: '成功'
+	};
+	res.json(obj016);
+});
+
+//火炬手接口 API017
+app.post('/api017', function(req, res) {
+	var obj017 = {
+		result: 1, 
+		message: '成功',
+		version: 1,
+		path: 'apk/path'
+	};
+	res.json(obj017);
+});
+
+//火炬手接口 API018
+app.post('/api018', function(req, res) {
+	var obj018 = {
+		result: 1, 
+		message: '成功',
+		slides: ['/path1','/path2', '/path3', '/path4']
+	};
+	res.json(obj018);
+});
+
+
 
 app.use(function(req, res) {
 	res.status(404);
