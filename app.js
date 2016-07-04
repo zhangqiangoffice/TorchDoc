@@ -216,7 +216,7 @@ app.post('/api010', function(req, res) {
 });
 
 //火炬手接口 API011
-app.post('/api011', function(req, res) {
+app.post('/app/getCustomer', function(req, res) {
 	var obj011 = {
 		result: 1, 
 		message: '成功',
@@ -273,7 +273,7 @@ app.post('/api015', function(req, res) {
 });
 
 //火炬手接口 API016
-app.post('/api016', function(req, res) {
+app.post('/app/editPassword', function(req, res) {
 	var obj016 = {
 		result: 1, 
 		message: '成功'
@@ -297,7 +297,7 @@ app.post('/api018', function(req, res) {
 	var obj018 = {
 		result: 1, 
 		message: '成功',
-		slides: ['/path1','/path2', '/path3', '/path4']
+		slides: ['img/pic_slide.png','img/pic_slide2.png', 'img/pic_slide3.png', 'img/pic_slide4.png']
 	};
 	res.json(obj018);
 });
