@@ -23,7 +23,7 @@ app.post('/app/register', function(req, res) {
 });
 
 //火炬手接口 API003
-app.post('/api003', function(req, res) {
+app.post('/app/getArticle', function(req, res) {
 	var obj003 = {
 		result: 1, 
 		message: '成功', 
@@ -125,7 +125,7 @@ app.post('/api003', function(req, res) {
 });
 
 //火炬手接口 API004
-app.post('/api004', function(req, res) {
+app.post('/app/getArticleDetail', function(req, res) {
 	var obj004 = {
 		result: 1, 
 		message: '成功', 
@@ -135,7 +135,7 @@ app.post('/api004', function(req, res) {
 });
 
 //火炬手接口 API005
-app.post('/api005', function(req, res) {
+app.post('/app/getSubject', function(req, res) {
 	var obj005 = {
 		result: 1, 
 		message: '成功', 
@@ -162,13 +162,13 @@ app.post('/api006', function(req, res) {
 });
 
 //火炬手接口 API007
-app.post('/api007', function(req, res) {
+app.post('/app/collect', function(req, res) {
 	var obj007 = {result: 1, message: '操作成功'};
 	res.json(obj007);
 });
 
 //火炬手接口 API008
-app.post('/api008', function(req, res) {
+app.post('/app/like', function(req, res) {
 	var obj008 = {result: 1, message: '点赞成功'};
 	res.json(obj008);
 });
@@ -181,7 +181,7 @@ app.post('/api009', function(req, res) {
 });
 
 //火炬手接口 API010
-app.post('/api010', function(req, res) {
+app.post('/app/getComment', function(req, res) {
 	var obj010 = {
 		result: 1, 
 		message: '成功',
@@ -230,7 +230,7 @@ app.post('/app/getCustomer', function(req, res) {
 });
 
 //火炬手接口 API012
-app.post('/api012', function(req, res) {
+app.post('/app/editPhoto', function(req, res) {
 	var obj012 = {
 		result: 1, 
 		message: '成功'
@@ -239,7 +239,7 @@ app.post('/api012', function(req, res) {
 });
 
 //火炬手接口 API013
-app.post('/api013', function(req, res) {
+app.post('/app/addComment', function(req, res) {
 	var obj013 = {
 		result: 1, 
 		message: '成功'
@@ -263,7 +263,7 @@ app.post('/api014', function(req, res) {
 });
 
 //火炬手接口 API015
-app.post('/api015', function(req, res) {
+app.post('/app/getPermission', function(req, res) {
 	var obj015 = {
 		result: 1, 
 		message: '成功',
@@ -293,7 +293,7 @@ app.post('/api017', function(req, res) {
 });
 
 //火炬手接口 API018
-app.post('/api018', function(req, res) {
+app.post('/app/getCarousel', function(req, res) {
 	var obj018 = {
 		result: 1, 
 		message: '成功',
