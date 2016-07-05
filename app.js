@@ -175,7 +175,7 @@ app.post('/app/like', function(req, res) {
 
 
 //火炬手接口 API009
-app.post('/api009', function(req, res) {
+app.post('/app/addComment', function(req, res) {
 	var obj009 = {result: 1, message: '评论成功'};
 	res.json(obj009);
 });
@@ -239,7 +239,7 @@ app.post('/app/editPhoto', function(req, res) {
 });
 
 //火炬手接口 API013
-app.post('/app/addComment', function(req, res) {
+app.post('/api013', function(req, res) {
 	var obj013 = {
 		result: 1, 
 		message: '成功'
