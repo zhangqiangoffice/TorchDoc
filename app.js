@@ -34,7 +34,7 @@ app.post('/app/getArticle', function(req, res) {
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '长公主',
 				date: '2016-04-21',
-				pic: 'img/create_pic1.png',
+				pic: '/img/create_pic1.png',
 				tag_name: '政策',
 				tag_color: 'F39801',
 				likes_num: 110,
@@ -47,7 +47,7 @@ app.post('/app/getArticle', function(req, res) {
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '穆青',
 				date: '2016-06-03',
-				pic: 'img/learn_pic.png',
+				pic: '/img/learn_pic.png',
 				tag_name: '军事',
 				tag_color: '22AC35',
 				likes_num: 120,
@@ -60,7 +60,7 @@ app.post('/app/getArticle', function(req, res) {
 				description: '家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '百里奇',
 				date: '2015-12-29',
-				pic: 'img/create_pic1.png',
+				pic: '/img/create_pic1.png',
 				tag_name: '政策',
 				tag_color: 'F39801',
 				likes_num: 10,
@@ -73,7 +73,7 @@ app.post('/app/getArticle', function(req, res) {
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '霓凰',
 				date: '2016-06-01',
-				pic: 'img/learn_pic.png',
+				pic: '/img/learn_pic.png',
 				tag_name: '政策',
 				tag_color: 'F39801',
 				likes_num: 10,
@@ -86,7 +86,7 @@ app.post('/app/getArticle', function(req, res) {
 				description: '中国网7月1日讯 庆祝中国共产党成立95周年大会于7月1日上午在人民大会堂举行。中共中央总书记、国家主席、中央军委主席习近平出席大会并发表重要讲话。',
 				author: '言豫津',
 				date: '2016-07-01',
-				pic: 'img/learn_pic.png',
+				pic: '/img/learn_pic.png',
 				tag_name: '政策',
 				tag_color: 'F39801',
 				likes_num: 104,
@@ -99,7 +99,7 @@ app.post('/app/getArticle', function(req, res) {
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '楼之敬',
 				date: '2016-11-01',
-				pic: 'img/learn_pic.png',
+				pic: '/img/learn_pic.png',
 				tag_name: '政策',
 				tag_color: 'F39801',
 				likes_num: 80,
@@ -112,7 +112,7 @@ app.post('/app/getArticle', function(req, res) {
 				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
 				author: '卓鼎风',
 				date: '2016-06-21',
-				pic: 'img/learn_pic.png',
+				pic: '/img/learn_pic.png',
 				tag_name: '政策',
 				tag_color: 'F39801',
 				likes_num: 67,
@@ -156,7 +156,7 @@ app.post('/app/getSubject', function(req, res) {
 });
 
 //火炬手接口 API006
-app.post('/api006', function(req, res) {
+app.post('/app/studyOK', function(req, res) {
 	var obj006 = {result: 1, message: '学习通过'};
 	res.json(obj006);
 });
@@ -189,25 +189,25 @@ app.post('/app/getComment', function(req, res) {
 			{
 				name: '蒙挚',
 				date: '2016-07-01',
-				portrait: 'img/portrait_mengzhi.png',
+				portrait: '/img/portrait_mengzhi.png',
 				remark: '小殊，你怎么来了？'
 			},
 			{
 				name: '霓凰',
 				date: '2016-07-01',
-				portrait: 'img/portrait_nihuang.png',
+				portrait: '/img/portrait_nihuang.png',
 				remark: '这里明明有一颗痣'
 			},
 			{
 				name: '谢玉',
 				date: '2016-07-01',
-				portrait: 'img/portrait_xieyu.png',
+				portrait: '/img/portrait_xieyu.png',
 				remark: '朝堂之中哪有什么正岐之分，胜者，自然为正'
 			},
 			{
 				name: '太奶奶',
 				date: '2016-07-01',
-				portrait: 'img/portrait_tainainai.png',
+				portrait: '/img/portrait_tainainai.png',
 				remark: '你们什么时候结婚？'
 			},
 		]		
@@ -221,7 +221,7 @@ app.post('/app/getCustomer', function(req, res) {
 		result: 1, 
 		message: '成功',
 		name: '梅长苏',
-		portrait: 'img/portrait_meichangsu.png',
+		portrait: '/img/portrait_meichangsu.png',
 		collected_num: '3',
 		learned_num: '4',
 		create_num: '5'
@@ -239,7 +239,7 @@ app.post('/app/editPhoto', function(req, res) {
 });
 
 //火炬手接口 API013
-app.post('/api013', function(req, res) {
+app.post('/app/addArticle', function(req, res) {
 	var obj013 = {
 		result: 1, 
 		message: '成功'
@@ -248,7 +248,7 @@ app.post('/api013', function(req, res) {
 });
 
 //火炬手接口 API014
-app.post('/api014', function(req, res) {
+app.post('/app/getLabel', function(req, res) {
 	var obj014 = {
 		result: 1, 
 		message: '成功',
@@ -286,8 +286,8 @@ app.post('/api017', function(req, res) {
 	var obj017 = {
 		result: 1, 
 		message: '成功',
-		version: 1,
-		path: 'apk/path'
+		name: '1.1',
+		path: '/apk/app-debug.apk'
 	};
 	res.json(obj017);
 });
@@ -297,9 +297,26 @@ app.post('/app/getCarousel', function(req, res) {
 	var obj018 = {
 		result: 1, 
 		message: '成功',
-		slides: ['img/pic_slide.png','img/pic_slide2.png', 'img/pic_slide3.png', 'img/pic_slide4.png']
+		slides: ['/img/pic_slide.png','/img/pic_slide2.png', '/img/pic_slide3.png', '/img/pic_slide4.png']
 	};
 	res.json(obj018);
+});
+
+//火炬手接口 API019
+app.post('/api019', function(req, res) {
+	var obj019 = {
+		result: 1, 
+		message: '成功',
+		vote: 1,
+		theme: '7月评选活动',
+		selected: '-1',
+		options: [
+			{id: 1, choice: '习大大帅', num: 20},
+			{id: 2, choice: '彭麻麻美', num: 20},
+			{id: 3, choice: '你猜我美不美', num: 20}
+		]
+	};
+	res.json(obj019);
 });
 
 
