@@ -221,10 +221,12 @@ app.post('/app/getCustomer', function(req, res) {
 		result: 1, 
 		message: '成功',
 		name: '梅长苏',
+		phone: '15212345678',
 		portrait: '/img/portrait_meichangsu.png',
 		collected_num: '3',
 		learned_num: '4',
-		create_num: '5'
+		create_num: '5',
+		recommend_num: '6'
 	};
 	res.json(obj011);
 });
@@ -282,7 +284,7 @@ app.post('/app/editPassword', function(req, res) {
 });
 
 //火炬手接口 API017
-app.post('/api017', function(req, res) {
+app.post('/app/getVersion', function(req, res) {
 	var obj017 = {
 		result: 1, 
 		message: '成功',
@@ -303,21 +305,30 @@ app.post('/app/getCarousel', function(req, res) {
 });
 
 //火炬手接口 API019
-app.post('/api019', function(req, res) {
+app.post('/app/getVote', function(req, res) {
 	var obj019 = {
 		result: 1, 
 		message: '成功',
-		vote: 1,
 		theme: '7月评选活动',
 		selected: '-1',
 		options: [
-			{id: 1, choice: '习大大帅', num: 20},
+			{id: 1, choice: '习大大帅', num: 10},
 			{id: 2, choice: '彭麻麻美', num: 20},
-			{id: 3, choice: '你猜我美不美', num: 20}
+			{id: 3, choice: '你猜我美不美', num: 30}
 		]
 	};
 	res.json(obj019);
 });
+
+//火炬手接口 API020
+app.post('/app/addVote', function(req, res) {
+	var obj020 = {
+		result: 1, 
+		message: '投票成功'
+	};
+	res.json(obj020);
+});
+
 
 
 
