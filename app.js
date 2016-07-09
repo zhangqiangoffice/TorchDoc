@@ -40,7 +40,8 @@ app.post('/app/getArticle', function(req, res) {
 				likes_num: 110,
 				comments_num: 815,
 				collected: 0,
-				liked: 0},
+				liked: 0,
+				learned: 1},
 			{
 				id: 2, 
 				title: '习近平向美国总统奥巴马致慰问电',
@@ -53,7 +54,8 @@ app.post('/app/getArticle', function(req, res) {
 				likes_num: 120,
 				comments_num: 831,
 				collected: 0,
-				liked: 1},
+				liked: 1,
+				learned: 1},
 			{
 				id: 3, 
 				title: '就佛罗里达州枪击事件习近平向美国总统奥巴马致慰问电',
@@ -66,7 +68,8 @@ app.post('/app/getArticle', function(req, res) {
 				likes_num: 10,
 				comments_num: 5,
 				collected: 0,
-				liked: 0},
+				liked: 0,
+				learned: 0},
 			{
 				id: 4, 
 				title: '美国总统奥巴马致慰问电',
@@ -79,7 +82,8 @@ app.post('/app/getArticle', function(req, res) {
 				likes_num: 10,
 				comments_num: 5,
 				collected: 1,
-				liked: 0},
+				liked: 0,
+				learned: 0},
 			{
 				id: 5, 
 				title: '建党95周年庆祝大会举行 习近平发表讲话',
@@ -92,7 +96,8 @@ app.post('/app/getArticle', function(req, res) {
 				likes_num: 104,
 				comments_num: 334,
 				collected: 1,
-				liked: 1},
+				liked: 1,
+				learned: 0},
 			{
 				id: 6, 
 				title: '美国总统奥巴马致慰问电',
@@ -105,7 +110,8 @@ app.post('/app/getArticle', function(req, res) {
 				likes_num: 80,
 				comments_num: 38,
 				collected: 1,
-				liked: 0},
+				liked: 0,
+				learned: 0},
 			{
 				id: 7, 
 				title: '美国总统奥巴马致慰问电',
@@ -118,7 +124,64 @@ app.post('/app/getArticle', function(req, res) {
 				likes_num: 67,
 				comments_num: 208,
 				collected: 0,
-				liked: 0}
+				liked: 0,
+				learned: 0},
+			{
+				id: 8, 
+				title: '美国总统奥巴马致慰问电8',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				author: '卓鼎风',
+				date: '2016-06-21',
+				pic: '/img/learn_pic.png',
+				tag_name: '政策',
+				tag_color: 'F39801',
+				likes_num: 67,
+				comments_num: 208,
+				collected: 0,
+				liked: 0,
+				learned: 0},
+			{
+				id: 9, 
+				title: '9美国总统奥巴马致慰问电',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				author: '卓鼎风',
+				date: '2016-06-21',
+				pic: '/img/learn_pic.png',
+				tag_name: '政策',
+				tag_color: 'F39801',
+				likes_num: 67,
+				comments_num: 208,
+				collected: 0,
+				liked: 0,
+				learned: 0},
+			{
+				id: 10, 
+				title: '10美国总统奥巴马致慰问电',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				author: '卓鼎风',
+				date: '2016-06-21',
+				pic: '/img/learn_pic.png',
+				tag_name: '政策',
+				tag_color: 'F39801',
+				likes_num: 67,
+				comments_num: 208,
+				collected: 0,
+				liked: 0,
+				learned: 0},
+			{
+				id: 11, 
+				title: '11美国总统奥巴马致慰问电',
+				description: '国家主席习近平致电美国总统奥巴马，就美国佛罗里达州奥兰多市发生枪击事件，造成重大伤亡',
+				author: '卓鼎风',
+				date: '2016-06-21',
+				pic: '/img/learn_pic.png',
+				tag_name: '政策',
+				tag_color: 'F39801',
+				likes_num: 67,
+				comments_num: 208,
+				collected: 0,
+				liked: 0,
+				learned: 0}
 		]
 	};
 	res.json(obj003);
@@ -187,24 +250,28 @@ app.post('/app/getComment', function(req, res) {
 		message: '成功',
 		comments: [
 			{
+				id: 1,
 				name: '蒙挚',
 				date: '2016-07-01',
 				portrait: '/img/portrait_mengzhi.png',
 				remark: '小殊，你怎么来了？'
 			},
 			{
+				id: 2,
 				name: '霓凰',
 				date: '2016-07-01',
 				portrait: '/img/portrait_nihuang.png',
 				remark: '这里明明有一颗痣'
 			},
 			{
+				id: 3,
 				name: '谢玉',
 				date: '2016-07-01',
 				portrait: '/img/portrait_xieyu.png',
 				remark: '朝堂之中哪有什么正岐之分，胜者，自然为正'
 			},
 			{
+				id: 4,
 				name: '太奶奶',
 				date: '2016-07-01',
 				portrait: '/img/portrait_tainainai.png',
